@@ -805,6 +805,9 @@ type [<AllowNullLiteral>] WindowBase64 =
     abstract atob: encodedString: string -> string
     abstract btoa: rawString: string -> string
 
+type [<AllowNullLiteral>] Navigator =
+    abstract platform: string with get
+
 type [<AllowNullLiteral>] Window =
     inherit EventTarget
     inherit WindowTimers
@@ -816,7 +819,7 @@ type [<AllowNullLiteral>] Window =
     // abstract performance: Performance with get, set
     // abstract clientInformation: Navigator with get, set
     // abstract crypto: Crypto with get, set
-    // abstract navigator: Navigator with get, set
+    abstract navigator: Navigator with get, set
     // abstract styleMedia: StyleMedia with get, set
     // abstract getComputedStyle: elt: Element * ?pseudoElt: string -> CSSStyleDeclaration
     // abstract getMatchedCSSRules: elt: Element * ?pseudoElt: string -> CSSRuleList

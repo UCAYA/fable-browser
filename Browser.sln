@@ -1,23 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D9506C1D-DF7A-4975-B4A9-80B2EF4ADA2E}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Browser.Blob", "src\Blob\Browser.Blob.fsproj", "{BBB5024A-52F8-463B-B8CC-04DEB842852B}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Browser.Blob", "src\Blob\Browser.Blob.fsproj", "{BBB5024A-52F8-463B-B8CC-04DEB842852B}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Browser.Dom", "src\Dom\Browser.Dom.fsproj", "{705432F3-33D0-44E6-9778-39F8E2209A13}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Browser.Dom", "src\Dom\Browser.Dom.fsproj", "{705432F3-33D0-44E6-9778-39F8E2209A13}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Browser.Event", "src\Event\Browser.Event.fsproj", "{5DBD3E48-7769-466D-A850-63F78CAE4158}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Browser.Event", "src\Event\Browser.Event.fsproj", "{5DBD3E48-7769-466D-A850-63F78CAE4158}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Browser.WebStorage", "src\WebStorage\Browser.WebStorage.fsproj", "{71693453-1A54-4354-B0F3-48F0272643E5}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Browser.WebStorage", "src\WebStorage\Browser.WebStorage.fsproj", "{71693453-1A54-4354-B0F3-48F0272643E5}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Browser.Performance", "src\Performance\Browser.Performance.fsproj", "{A33C795C-3945-4F0A-9205-44EE3B418496}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Browser.Performance", "src\Performance\Browser.Performance.fsproj", "{A33C795C-3945-4F0A-9205-44EE3B418496}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Browser.Url", "src\Url\Browser.Url.fsproj", "{3BE1F106-50B6-4315-BF76-D0457ADA80A6}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Browser.Url", "src\Url\Browser.Url.fsproj", "{3BE1F106-50B6-4315-BF76-D0457ADA80A6}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Browser.WebSocket", "src\WebSocket\Browser.WebSocket.fsproj", "{B82D218C-35D3-4342-B19B-89030EB99C9B}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Browser.WebSocket", "src\WebSocket\Browser.WebSocket.fsproj", "{B82D218C-35D3-4342-B19B-89030EB99C9B}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Browser.WebRTC", "src\WebRTC\Browser.WebRTC.fsproj", "{B5B98E87-692D-43B5-843E-882A065C2797}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Browser.ArrayBuffer", "src\ArrayBuffer\Browser.ArrayBuffer.fsproj", "{1A0DE080-DA43-42C5-A0EE-C6ED1EAD9CB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +31,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BBB5024A-52F8-463B-B8CC-04DEB842852B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -116,6 +117,33 @@ Global
 		{B82D218C-35D3-4342-B19B-89030EB99C9B}.Release|x64.Build.0 = Release|Any CPU
 		{B82D218C-35D3-4342-B19B-89030EB99C9B}.Release|x86.ActiveCfg = Release|Any CPU
 		{B82D218C-35D3-4342-B19B-89030EB99C9B}.Release|x86.Build.0 = Release|Any CPU
+		{B5B98E87-692D-43B5-843E-882A065C2797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5B98E87-692D-43B5-843E-882A065C2797}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5B98E87-692D-43B5-843E-882A065C2797}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B5B98E87-692D-43B5-843E-882A065C2797}.Debug|x64.Build.0 = Debug|Any CPU
+		{B5B98E87-692D-43B5-843E-882A065C2797}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B5B98E87-692D-43B5-843E-882A065C2797}.Debug|x86.Build.0 = Debug|Any CPU
+		{B5B98E87-692D-43B5-843E-882A065C2797}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5B98E87-692D-43B5-843E-882A065C2797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5B98E87-692D-43B5-843E-882A065C2797}.Release|x64.ActiveCfg = Release|Any CPU
+		{B5B98E87-692D-43B5-843E-882A065C2797}.Release|x64.Build.0 = Release|Any CPU
+		{B5B98E87-692D-43B5-843E-882A065C2797}.Release|x86.ActiveCfg = Release|Any CPU
+		{B5B98E87-692D-43B5-843E-882A065C2797}.Release|x86.Build.0 = Release|Any CPU
+		{1A0DE080-DA43-42C5-A0EE-C6ED1EAD9CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A0DE080-DA43-42C5-A0EE-C6ED1EAD9CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A0DE080-DA43-42C5-A0EE-C6ED1EAD9CB3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1A0DE080-DA43-42C5-A0EE-C6ED1EAD9CB3}.Debug|x64.Build.0 = Debug|Any CPU
+		{1A0DE080-DA43-42C5-A0EE-C6ED1EAD9CB3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1A0DE080-DA43-42C5-A0EE-C6ED1EAD9CB3}.Debug|x86.Build.0 = Debug|Any CPU
+		{1A0DE080-DA43-42C5-A0EE-C6ED1EAD9CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A0DE080-DA43-42C5-A0EE-C6ED1EAD9CB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A0DE080-DA43-42C5-A0EE-C6ED1EAD9CB3}.Release|x64.ActiveCfg = Release|Any CPU
+		{1A0DE080-DA43-42C5-A0EE-C6ED1EAD9CB3}.Release|x64.Build.0 = Release|Any CPU
+		{1A0DE080-DA43-42C5-A0EE-C6ED1EAD9CB3}.Release|x86.ActiveCfg = Release|Any CPU
+		{1A0DE080-DA43-42C5-A0EE-C6ED1EAD9CB3}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BBB5024A-52F8-463B-B8CC-04DEB842852B} = {D9506C1D-DF7A-4975-B4A9-80B2EF4ADA2E}
@@ -125,5 +153,9 @@ Global
 		{A33C795C-3945-4F0A-9205-44EE3B418496} = {D9506C1D-DF7A-4975-B4A9-80B2EF4ADA2E}
 		{3BE1F106-50B6-4315-BF76-D0457ADA80A6} = {D9506C1D-DF7A-4975-B4A9-80B2EF4ADA2E}
 		{B82D218C-35D3-4342-B19B-89030EB99C9B} = {D9506C1D-DF7A-4975-B4A9-80B2EF4ADA2E}
+		{B5B98E87-692D-43B5-843E-882A065C2797} = {D9506C1D-DF7A-4975-B4A9-80B2EF4ADA2E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B135BE68-0E02-4FCD-BCFF-1CACFA1331D3}
 	EndGlobalSection
 EndGlobal
